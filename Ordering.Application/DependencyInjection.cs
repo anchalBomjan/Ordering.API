@@ -1,17 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+
 using Microsoft.Extensions.DependencyInjection;
 using Odering.Core.Repositories.Command.Base;
 using Odering.Core.Repositories.Query;
 using Odering.Core.Repositories.Query.Base;
-using Ordering.Infrastructure.Data;
-using Ordering.Infrastructure.Identity;
-using Ordering.Infrastructure.Repositories.Command;
-using Ordering.Infrastructure.Repositories.Command.Base;
-using Ordering.Infrastructure.Repositories.Query;
-using Ordering.Infrastructure.Repositories.Query.Base;
-using Ordering.Infrastructure.Services;
+using Ordering.Application.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;

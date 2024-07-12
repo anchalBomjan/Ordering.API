@@ -17,4 +17,9 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Odering.Core\Odering.Core.csproj" />
+  </ItemGroup>
+
+
 </Project>
