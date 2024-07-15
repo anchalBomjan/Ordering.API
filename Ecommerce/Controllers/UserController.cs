@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Ordering.Application.Commands.User.Create;
+//using Ordering.Application.Commands.User.Create;
 using Ordering.Application.Commands.User.Delete;
 using Ordering.Application.Commands.User.Update;
 using Ordering.Application.DTOs;
@@ -25,12 +25,12 @@ namespace Ecommerce.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost("Create")]
-        [ProducesDefaultResponseType(typeof(int))]
-        public async Task<ActionResult> CreateUser(CreateUserCommand command)
-        {
-            return Ok(await _mediator.Send(command));
-        }
+        //[HttpPost("Create")]
+        //[ProducesDefaultResponseType(typeof(int))]
+        //public async Task<ActionResult> CreateUser(CreateUserCommand command)
+        //{
+        //    return Ok(await _mediator.Send(command));
+        //}
 
         [HttpGet("GetAll")]
         [ProducesDefaultResponseType(typeof(List<UserResponseDTO>))]

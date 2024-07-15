@@ -23,3 +23,4 @@ namespace Ordering.Application.Query.User
             return new UserDetailsResponseDTO() { Id = userId, FullName = fullName, UserName = userName, Email = email, Roles = roles };
         }
     }
+}

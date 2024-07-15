@@ -1,24 +1,24 @@
-﻿using MediatR;
-using Ordering.Application.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using MediatR;
+//using Ordering.Application.Common;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace Ordering.Application.Commands.User.Create
-{
-    public  class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>
-    {
-        private readonly IIdentityService _identityService;
-        public CreateUserCommandHandler(IIdentityService identityService) 
-        {
-            _identityService = identityService;
-        }
-        public async Task<int> Handle(CreateUserCommand request, CancellationToken cancellationToken)
-        {
-            var result = await _identityService.CreateUserAsync(request.UserName, request.Password, request.Email, request.FullName, request.Roles);
-            return result.isSucceed ? 1 : 0;
-        }
-    }
-}
+//namespace Ordering.Application.Commands.User.Create
+//{
+//    public  class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>
+//    {
+//        private readonly IIdentityService _identityService;
+//        public CreateUserCommandHandler(IIdentityService identityService) 
+//        {
+//            _identityService = identityService;
+//        }
+//        public async Task<int> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+//        {
+//            var result = await _identityService.CreateUserAsync(request.UserName, request.Password, request.Email, request.FullName, request.Roles);
+//            return result.isSucceed ? 1 : 0;
+//        }
+//    }
+//}

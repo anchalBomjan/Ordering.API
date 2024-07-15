@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Ordering.Infrastructure.Data
         public IDbConnection CreateConnection()
         {
             string _connectionString = _configuration.GetConnectionString("DefaultConnection");
-            return new SqliteConnection(_connectionString);
+            return new SqlConnection(_connectionString);
         }
     }
 }
