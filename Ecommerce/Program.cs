@@ -1,10 +1,13 @@
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Ordering.Application.Commands.Customers;
 using Ordering.Application.Commands.User.Create;
 using Ordering.Application.Common.Interfaces;
+using Ordering.Infrastructure;
 using Ordering.Infrastructure.Services;
+using System.Reflection;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);

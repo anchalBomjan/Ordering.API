@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using Ordering.Application.Common.Interface;
+
 using Ordering.Application.Common;
 using Ordering.Application.DTOs;
 using System;
@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ordering.Application.Common.Interfaces;
 
 namespace Ordering.Application.Commands.Auth
 {
